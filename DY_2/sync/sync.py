@@ -1,7 +1,10 @@
 import matplotlib.pyplot as plt
 
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 黑体
-plt.rcParams['axes.unicode_minus'] = False  # 解决无法显示符号的问题
+# plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 黑体
+# plt.rcParams['axes.unicode_minus'] = False  # 解决无法显示符号的问题
+
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 步骤一（替换sans-serif字体）
+plt.rcParams['axes.unicode_minus'] = False  # 步骤二（解决坐标轴负数的负号显示问题）
 
 
 def sync_time():

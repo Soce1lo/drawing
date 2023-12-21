@@ -4,8 +4,10 @@ import pandas as pd
 
 
 def loss():
-    plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 黑体
-    plt.rcParams['axes.unicode_minus'] = False  # 解决无法显示符号的问题
+    # plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 黑体
+    # plt.rcParams['axes.unicode_minus'] = False  # 解决无法显示符号的问题
+    plt.rcParams['font.sans-serif'] = ['SimHei']  # 步骤一（替换sans-serif字体）
+    plt.rcParams['axes.unicode_minus'] = False  # 步骤二（解决坐标轴负数的负号显示问题）
     x = [0.0, 0.1, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2]
 
     # 异步更新
